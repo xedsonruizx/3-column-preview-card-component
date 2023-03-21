@@ -1,4 +1,3 @@
-
 html,
 body {
   height: 100%;
@@ -7,29 +6,34 @@ body {
 }
 
 :root {
-
   /* ### Primary */
-  --dark-cyan: hsl(185, 75%, 39%);
-  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
-  --dark-grayish-blue: hsl(227, 10%, 46%);
-  
+
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
   /* ### Neutral */
-  
-  --dark-gray: hsl(0, 0%, 59%);
-  
+  /* (paragraphs) */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* (background, headings, buttons) */
+  --very-light-gray: hsl(0, 0%, 95%);
+
   --weight-light: 400;
   /* --weight-normal: 700; */
   --weight-heavy: 700;
 }
 
 body {
-  background-color: var(--dark-cyan);
-  font-family: 'Kumbh Sans', sans-serif;
-  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
-  background-repeat: no-repeat;
-  background-attachment: fixed, fixed;
-  background-position: -32vh -500px, 82vh 500px;
-  font-size: 18;
+  background-color: var(--very-light-gray);
+  /* font-family: "Big Shoulders Display", cursive; */
+  font-family: "Lexend Deca", sans-serif;
+  overflow-x: hidden;
+  font-size: 15px;
+  color: var(--transparent-white);
+}
+
+.Shoulders {
+  font-family: "Big Shoulders Display", cursive;
 }
 
 /* GROSOR */
@@ -49,13 +53,18 @@ body {
   flex-direction: column;
   align-items: center;
   align-self: center;
-  justify-content: center;
+  
   height: 100vh;
 }
 
+@media (min-width: 920px) {
+  #main {
+    justify-content: center;
+  }
+}
 
-@media (min-width: 320px) and (max-width: 400px) {
-  body{
-    background-position: -94vh  -433px, 19vh 417px;
+@media (min-width: 320px) and (max-width: 919px) {
+  body {
+    padding-top: 50px;
   }
 }

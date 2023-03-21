@@ -37,3 +37,17 @@
 .flex-column {
   flex-direction: column;
 }
+
+.col-12{
+  width: 100%;
+}
+
+
+@media (min-width: 920px) {
+  .row{
+    display: flex;
+  }
+  .col-4{
+    width: 33.33333333%;
+  }
+}
